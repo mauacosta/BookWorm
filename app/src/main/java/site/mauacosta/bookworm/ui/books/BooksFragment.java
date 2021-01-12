@@ -23,13 +23,6 @@ public class BooksFragment extends Fragment {
         booksViewModel =
                 new ViewModelProvider(this).get(BooksViewModel.class);
         View root = inflater.inflate(R.layout.fragment_books, container, false);
-        final TextView textView = root.findViewById(R.id.text_books);
-        booksViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }
