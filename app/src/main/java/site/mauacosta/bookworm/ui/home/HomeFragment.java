@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
 
         welcomeText = root.findViewById(R.id.tvHomeTitle);
 
-        welcomeText.setText("WELCOME " + prefs.getString(KEY_NAME, "WELCOME"));
+        welcomeText.setText("Welcome " + prefs.getString(KEY_NAME, "Reader"));
 
         return root;
     }
