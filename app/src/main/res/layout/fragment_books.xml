@@ -28,9 +28,10 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white_500"
                 android:contentDescription="Add Book Button"
-                app:srcCompat="@drawable/add"
+                android:onClick="goToAddBook"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/add" />
 
             <TextView
                 android:id="@+id/tvReadingTitle"

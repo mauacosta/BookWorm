@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import site.mauacosta.bookworm.MainActivity;
 import site.mauacosta.bookworm.R;
 
 public class BooksFragment extends Fragment {
@@ -24,5 +25,9 @@ public class BooksFragment extends Fragment {
                 new ViewModelProvider(this).get(BooksViewModel.class);
         View root = inflater.inflate(R.layout.fragment_books, container, false);
         return root;
+    }
+
+    public void goToChooseBook(View v){
+        ((MainActivity) getActivity()).goToAddBook(v);
     }
 }
