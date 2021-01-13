@@ -24,13 +24,15 @@
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="17dp"
+                android:layout_height="21dp"
                 android:background="@color/white_500"
                 android:contentDescription="Add Book Button"
+                android:onClick="goToAddBook"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/add" />
+                app:srcCompat="@drawable/add"
+                tools:ignore="OnClick" />
 
             <TextView
                 android:id="@+id/tvReadingTitle"

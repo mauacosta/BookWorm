@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white_500"
         android:contentDescription="Add Book Button"
+        android:onClick="goToAddBook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/add" />
@@ -47,11 +48,11 @@
 
     <EditText
         android:id="@+id/etChangeName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvChangeName"/>
 
